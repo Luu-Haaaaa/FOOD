@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Food App</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="dessert">DESSERT</string>
+    <string name="todo_donut">Donuts are glazed and sprinkled with candy.</string>
+    <string name="todo_icecream">Ice cream sandwiches have chocolate wafers and vanilla filling.</string>
+    <string name="todo_froyo">FroYo is premium self-serve frozen yogurt.</string>
+    <string name="donut_order_message">You ordered Donut</string>
+    <string name="ice_cream_order_message">You ordered Ice_Cream</string>
+    <string name="froyo_order_message">You ordered FroYo</string>
+    <string name="order_successfull">Order Successful!!!</string>
+    <string name="choose_donut">Donut:</string>
+    <string name="choose_ice_cream">Ice-Cream:</string>
+    <string name="choose_froyo">FroYo:</string>
+    <string name="back">BACK</string>
+    <string name="string_back">BACK</string>
+    <string name="string_next">NEXT</string>
+    <string name="your_cart">YOUR CART</string>
+    <string name="quantity">Quantity</string>
+    <string name="your_food_1">Your Food</string>
+    <string name="your_food_2">Choose a food</string>
+    <string name="number_item">number_item</string>
+    <string name="number_1">1</string>
+    <string name="todo_add">TODO</string>
+    <string name="todo_remove">TODO</string>
+    <string name="cart_label">YOUR CART</string>
+    <string name="price_donut">4.000đ - 74.000đ</string>
+    <string name="price_froyo">20.000đ - 35.000đ</string>
+    <string name="price_icecream">30.000đ - 80.000đ</string>
+    <string name="add_to_cart_froyo">TODO</string>
+    <string name="price_icon_donut">TODO</string>
+    <string name="add_to_cart_icecream">TODO</string>
+    <string name="price_icon_froyo">TODO</string>
+    <string name="add_to_cart_donut">TODO</string>
+    <string name="price_icon_icecream">TODO</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="yummy">TODO</string>
+</resources>
