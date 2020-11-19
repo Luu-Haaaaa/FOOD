@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Food App</string>
+    <string name="app_name">FOOD</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -41,8 +41,18 @@
     <string name="price_icon_froyo">TODO</string>
     <string name="add_to_cart_donut">TODO</string>
     <string name="price_icon_icecream">TODO</string>
-    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="title_activity_fullscreen">FOOD</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="yummy">TODO</string>
+    <string name="user_name">TextView</string>
+    <string name="name">Name</string>
+    <string name="todo_usericon">TODO</string>
+    <string name="email_phone_user_name">Email/Phone/User name</string>
+    <string name="icon_password">TODO</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">Sign up</string>
+    <string name="forgot">Forgot?</string>
+    <string name="or">or</string>
 </resources>

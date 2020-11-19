@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:theme="@style/ThemeOverlay.FoodApp.FullscreenContainer"
+    tools:context=".FullscreenActivity">
+
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#33FF9E80"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:id="@+id/fullscreen_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_name" />
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="@style/Widget.Theme.FoodApp.ButtonBar.Fullscreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/dummy_button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dummy_button" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp">
+
+        <ImageView
+            android:id="@+id/donut_worry"
+            android:layout_width="wrap_content"
+            android:layout_height="258dp"
+            android:background="#00009E80"
+            android:contentDescription="@string/yummy"
+            app:srcCompat="@drawable/yummyyy" />
+
+        <ImageView
+            android:id="@+id/icon_user"
+            android:layout_width="42dp"
+            android:layout_height="34dp"
+            android:layout_below="@id/donut_worry"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="2dp"
+            android:layout_toStartOf="@id/user_login"
+            android:contentDescription="@string/todo_usericon"
+            app:srcCompat="@drawable/ic_person"
+            tools:ignore="VectorDrawableCompat" />
+
+        <EditText
+            android:id="@+id/user_login"
+            android:layout_width="233dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/donut_worry"
+            android:layout_centerHorizontal="true"
+            android:autofillHints="@android:string/autofill"
+            android:background="#00FFFFFF"
+            android:ems="10"
+            android:hint="@string/email_phone_user_name"
+            android:inputType="textLongMessage"
+            android:textColor="@android:color/holo_purple"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="41dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/icon_user"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="4dp"
+            android:layout_toStartOf="@id/password_text"
+            android:contentDescription="@string/icon_password"
+            app:srcCompat="@drawable/ic_password_lock"
+            tools:ignore="VectorDrawableCompat" />
+
+        <EditText
+            android:id="@+id/password_text"
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_login"
+            android:layout_centerHorizontal="true"
+            android:autofillHints="@android:string/autofill"
+            android:hint="@string/enter_your_password"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_purple"
+            android:textColorHint="@android:color/darker_gray"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/sign_in"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_text"
+            android:layout_centerHorizontal="true"
+            android:text="@string/sign_in"
+            android:textColor="@android:color/white"
+
+            app:backgroundTint="#A6F38181" />
+
+        <TextView
+            android:id="@+id/sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_in"
+            android:layout_alignStart="@id/sign_in"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp"
+            android:text="@string/sign_up" />
+
+        <TextView
+            android:id="@+id/forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_in"
+            android:layout_alignEnd="@id/sign_in"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:text="@string/forgot" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_up"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/darker_gray"
+            android:text="@string/or" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>
