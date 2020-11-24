@@ -13,9 +13,9 @@
     <string name="todo_donut">Donuts are glazed and sprinkled with candy.</string>
     <string name="todo_icecream">Ice cream sandwiches have chocolate wafers and vanilla filling.</string>
     <string name="todo_froyo">FroYo is premium self-serve frozen yogurt.</string>
-    <string name="donut_order_message">You ordered Donut</string>
-    <string name="ice_cream_order_message">You ordered Ice_Cream</string>
-    <string name="froyo_order_message">You ordered FroYo</string>
+    <string name="donut_order_message">You choosed Donut</string>
+    <string name="ice_cream_order_message">You choosed Ice_Cream</string>
+    <string name="froyo_order_message">You choosed FroYo</string>
     <string name="order_successfull">Order Successful!!!</string>
     <string name="choose_donut">Donut:</string>
     <string name="choose_ice_cream">Ice-Cream:</string>
@@ -45,7 +45,7 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="yummy">TODO</string>
-    <string name="user_name">TextView</string>
+    <string name="user_name">Help</string>
     <string name="name">Name</string>
     <string name="todo_usericon">TODO</string>
     <string name="email_phone_user_name">Email/Phone/User name</string>
@@ -55,4 +55,17 @@
     <string name="sign_up">Sign up</string>
     <string name="forgot">Forgot?</string>
     <string name="or">or</string>
+    <string name="sign_in_with_facebook">Sign in with Facebook</string>
+    <string name="logo_fb">TODO</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="gg_icon">TODO</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >8 characters</string>
+    <string name="login_failed">"Login failed"</string>
 </resources>

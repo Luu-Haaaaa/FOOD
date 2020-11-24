@@ -2,12 +2,12 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
     android:theme="@style/ThemeOverlay.FoodApp.FullscreenContainer"
     tools:context=".FullscreenActivity">
-
 
     <!-- The primary full-screen view. This can be replaced with whatever view
          is needed to present your content, e.g. VideoView, SurfaceView,
@@ -15,49 +15,17 @@
 
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#33FF9E80"
-        android:fitsSystemWindows="true">
-
-        <TextView
-            android:id="@+id/fullscreen_content"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/user_name" />
-
-        <LinearLayout
-            android:id="@+id/fullscreen_content_controls"
-            style="@style/Widget.Theme.FoodApp.ButtonBar.Fullscreen"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center_horizontal"
-            android:orientation="horizontal"
-            tools:ignore="UselessParent">
-
-            <Button
-                android:id="@+id/dummy_button"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/dummy_button" />
-
-        </LinearLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </RelativeLayout>
-
-    </FrameLayout>
+        android:fitsSystemWindows="true" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="70dp">
+        android:layout_marginTop="50dp">
 
         <ImageView
             android:id="@+id/donut_worry"
@@ -69,11 +37,11 @@
 
         <ImageView
             android:id="@+id/icon_user"
-            android:layout_width="42dp"
-            android:layout_height="34dp"
+            android:layout_width="37dp"
+            android:layout_height="wrap_content"
             android:layout_below="@id/donut_worry"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="2dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="7dp"
             android:layout_toStartOf="@id/user_login"
             android:contentDescription="@string/todo_usericon"
             app:srcCompat="@drawable/ic_person"
@@ -95,12 +63,12 @@
             android:textSize="20sp" />
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="41dp"
-            android:layout_height="30dp"
+            android:id="@+id/password_icon"
+            android:layout_width="49dp"
+            android:layout_height="wrap_content"
             android:layout_below="@id/icon_user"
-            android:layout_marginTop="17dp"
-            android:layout_marginEnd="4dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="2dp"
             android:layout_toStartOf="@id/password_text"
             android:contentDescription="@string/icon_password"
             app:srcCompat="@drawable/ic_password_lock"
@@ -113,12 +81,12 @@
             android:layout_below="@id/user_login"
             android:layout_centerHorizontal="true"
             android:autofillHints="@android:string/autofill"
+            android:ems="10"
             android:hint="@string/enter_your_password"
-            android:textSize="20sp"
+            android:inputType="textPassword"
             android:textColor="@android:color/holo_purple"
             android:textColorHint="@android:color/darker_gray"
-            android:ems="10"
-            android:inputType="textPassword" />
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/sign_in"
@@ -126,9 +94,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/password_text"
             android:layout_centerHorizontal="true"
+            android:onClick="SignIn"
             android:text="@string/sign_in"
             android:textColor="@android:color/white"
-
             app:backgroundTint="#A6F38181" />
 
         <TextView
@@ -137,9 +105,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/sign_in"
             android:layout_alignStart="@id/sign_in"
+            android:text="@string/sign_up"
             android:textColor="@android:color/darker_gray"
-            android:textSize="14sp"
-            android:text="@string/sign_up" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/forgot"
@@ -147,20 +115,82 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/sign_in"
             android:layout_alignEnd="@id/sign_in"
-            android:textSize="14sp"
+            android:text="@string/forgot"
             android:textColor="@android:color/darker_gray"
-            android:text="@string/forgot" />
+            android:textSize="14sp" />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/or"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/sign_up"
             android:layout_centerHorizontal="true"
-            android:textSize="14sp"
             android:layout_marginTop="20dp"
+            android:text="@string/or"
             android:textColor="@android:color/darker_gray"
-            android:text="@string/or" />
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/frame_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@id/or"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="#0576FF">
+
+            <ImageView
+                android:id="@+id/fb_logo"
+                android:layout_width="33dp"
+                android:layout_height="27dp"
+                android:contentDescription="@string/logo_fb"
+                app:srcCompat="@drawable/facebook" />
+
+            <TextView
+                android:id="@+id/signin_fb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginEnd="9dp"
+                android:layout_toEndOf="@id/fb_logo"
+                android:text="@string/sign_in_with_facebook"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/frame_gg"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@id/frame_fb"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="#E603A8F4">
+
+            <ImageView
+                android:id="@+id/gg_icon"
+                android:layout_width="29dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/gg_icon"
+                app:srcCompat="@drawable/google" />
+
+            <TextView
+                android:id="@+id/sign_gg"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="27dp"
+                android:layout_toEndOf="@id/gg_icon"
+                android:text="@string/sign_in_with_google"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
 
 
     </RelativeLayout>
